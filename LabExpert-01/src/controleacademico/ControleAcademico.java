@@ -45,7 +45,7 @@ public class ControleAcademico {
 		System.out.println("----------DADOS DO ALUNO----------\n");
 
 		//Disciplinas de um aluno
-		aluno.disciplinasAluno();
+		controlealuno.disciplinasAluno(aluno);
 		
 		//Alunos de uma disciplina
 		controlealuno.getAlunos(disciplina);

@@ -13,7 +13,7 @@ import controleacademico.Disciplina;
 import controleacademico.Professor;
 
 public class ControleProfessorTest {
-	
+
 	Professor professor;
 	Disciplina disc, disc1;
 	ControleProfessor controle;
@@ -25,10 +25,9 @@ public class ControleProfessorTest {
 		disc = new Disciplina("01", "Matemática", "Computação", "Terça 7h - 9h/Quinta 9h - 11h");
 		disc1 = new Disciplina("02", "Cálculo I", "Matemática", "Segunda 7h - 9h/Quarta 9h - 11h");
 		professores = new ArrayList<Professor>();
-		
 		controle = new ControleProfessor();
 	}
-	
+
 	/**
 	 * Teste se o professor foi cadastrado na disciplina
 	 */
@@ -39,16 +38,19 @@ public class ControleProfessorTest {
 		assertEquals(true, controle.cadastrarProfessor(professor, disc1));
 		assertEquals(false, controle.cadastrarProfessor(professor, disc1));
 	}
-	
+
 	/**
-	 * Teste da lista de professores 
+	 * Teste da lista de professores
 	 */
 	@Test
 	public void testGetProfessores() {
-		//Lista vazia
+		// Lista vazia
 		assertTrue(professores.isEmpty());
+		// Adiciona um professor na lista
 		professores.add(professor);
-		//Lista com um elemento
+		// Lista com um elemento
 		assertEquals(1, professores.size());
+		assertTrue(professores.contains(professor));
+		assertFalse(professores.isEmpty());
 	}
 }

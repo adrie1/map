@@ -13,7 +13,7 @@ import controleacademico.ControleAluno;
 import controleacademico.Disciplina;
 
 public class ControleAlunoTest {
-	
+
 	Disciplina disc;
 	Aluno aluno, aluno1;
 	ControleAluno controle;
@@ -25,10 +25,9 @@ public class ControleAlunoTest {
 		aluno = new Aluno("4321", "Ana Paula");
 		aluno1 = new Aluno("5678", "Aline Lins");
 		alunos = new ArrayList<Aluno>();
-		
 		controle = new ControleAluno();
 	}
-	
+
 	/**
 	 * Teste cadastrando um aluno na disciplina
 	 */
@@ -38,7 +37,7 @@ public class ControleAlunoTest {
 		assertEquals(false, controle.cadastrarAluno(aluno, disc));
 		assertEquals(true, controle.cadastrarAluno(aluno1, disc));
 	}
-	
+
 	/**
 	 * Teste da quantidade de alunos de uma disciplina
 	 */
@@ -47,19 +46,20 @@ public class ControleAlunoTest {
 		controle.cadastrarAluno(aluno, disc);
 		controle.cadastrarAluno(aluno1, disc);
 		assertEquals(2, controle.quantidadeAlunos(disc));
-	}	
-	
+	}
+
 	/**
-	 * Teste da lista de alunos 
+	 * Teste da lista de alunos
 	 */
 	@Test
 	public void testGetAlunos() {
-		//Lista vazia
+		// Lista vazia
 		assertTrue(alunos.isEmpty());
 		alunos.add(aluno);
 		alunos.add(aluno1);
-		//Lista com dois elementos
+		// Lista com dois elementos
 		assertEquals(2, alunos.size());
-		
+		assertTrue(alunos.contains(aluno1));
+		assertFalse(alunos.isEmpty());
 	}
 }

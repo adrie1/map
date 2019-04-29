@@ -17,15 +17,6 @@ public class Aluno extends Usuario {
 		super(id, nome);
 	}
 
-	/**
-	 * Mostra o nome das disciplinas do aluno
-	 */
-	public void disciplinasAluno() {
-		System.out.println("Disciplinas cadastradas do(a) aluno(a) " + nome + ":\n");
-		for (Disciplina disciplina : disciplinas) {
-			System.out.println(disciplina.getNome());
-		}
-	}
 
 	@Override
 	public String toString() {

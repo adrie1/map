@@ -1,7 +1,5 @@
 package controleacademico;
 
-import java.util.List;
-
 /**
  * Classe Professor
  * @author Samara e Adriele

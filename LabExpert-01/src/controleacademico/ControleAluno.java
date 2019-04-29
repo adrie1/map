@@ -65,7 +65,17 @@ public class ControleAluno {
 			}
 		}
 	}
-
+	
+	/**
+	 * Mostra o nome das disciplinas do aluno
+	 */
+	public void disciplinasAluno(Aluno aluno) {
+		System.out.println("Disciplinas cadastradas do(a) aluno(a) " + aluno.getNome() + ":\n");
+		for (Disciplina disciplina : aluno.disciplinas) {
+			System.out.println(disciplina.getNome());
+		}
+	}
+	
 	/**
 	 * Métodos get e set
 	 * @return
