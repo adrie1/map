@@ -12,6 +12,7 @@
 - Fachada
 - Singleton
 - Factory Method
+- Visitor
 
 ## Autor
 
