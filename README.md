@@ -15,7 +15,7 @@
 - Visitor
 - Adapter
 
-## Autor
+## Autores
 
 - [Adriele Costa](https://br.linkedin.com/in/adriele-costa-10474b183)
 - [Samara Lima](https://www.linkedin.com/in/samara-lima-50a10013a/)
