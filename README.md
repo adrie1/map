@@ -13,6 +13,7 @@
 - Singleton
 - Factory Method
 - Visitor
+- Adapter
 
 ## Autor
 
